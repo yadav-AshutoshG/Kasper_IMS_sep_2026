@@ -37,7 +37,7 @@ public class Add_All_Product {
 	     
 	     driver.findElement(By.xpath("//div[@class='form-login\']")).click();
 
-	     
+//	     fjgldfjgjfdl;jg;ldfj;gh;dfjgh
 	     
 	     Thread.sleep(9000);
 	     driver.close();
