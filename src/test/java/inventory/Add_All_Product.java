@@ -6,23 +6,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
+					
 public class Add_All_Product {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
 		
-		// open Browser
+		// open Browser/*
+		/*
+		 * 
+		 */
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		
 	     driver.get("https://imsmymunc.com/");
-		 /*
+		
+	     /*
 		  * Login 
 		  */
 	     
@@ -33,12 +34,12 @@ public class Add_All_Product {
 //	     driver.findElement(By.xpath("//label[text()='Email']")).sendKeys("y.ashutoshg@gmail.com");
 	     driver.findElement(By.xpath(
 	    		    "//label[contains(normalize-space(),'Email')]/following-sibling::div//input"
-	    		)).sendKeys("y.ashutoshg@gmail.com");
+	    		)).sendKeys("aditya.netario@gmail.com");
 	     
 //	     driver.findElement(By.xpath("//label[text()='Password']")).sendKeys("Kasper@123");
 	     driver.findElement(By.xpath(
 	    		    "//label[contains(normalize-space(),'Password')]/following-sibling::div//input"
-	    		)).sendKeys("Kasper@123");
+	    		)).sendKeys("Aditya@12345");
 	     
 	     driver.findElement(By.xpath("//div[@class='form-login\']")).click();
 
@@ -67,13 +68,14 @@ public class Add_All_Product {
 //	         driver.findElement(allProducts).click();
 //	     
 	     
+	    
+	     
 	     /*
+	      * Home  / DashBoard Page 
+	      * 
 	         * Inventory → All Products
 	         */
 
-	     
-	     
-	     
 	     
 	     
 	        // Click Inventory
@@ -98,16 +100,25 @@ public class Add_All_Product {
 //	        By addProducts = By.xpath("//div[contains(@class,'Add-Button')]");
 //
 //	        wait.until(ExpectedConditions.elementToBeClickable(addProducts)).click();
-//	    
-//	     
+//	    /*
+	        
+//	     click Add Products button
+	        
 	        driver.findElement(By.xpath("//div[text()='Add Products']")).click();
 	        
 	        
 	        
+	      /*
+	       *   Enter the data and Add The Product / Save The Product
+	       */
 	        
 	     
-	     
-	     
+	        
+	  
+	        
+	        
+	        
+//	     Come Back On DashBoard  / home PAge Then Logout 
 	     /*
 	      * Logout
 	      */
